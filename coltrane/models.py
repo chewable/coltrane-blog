@@ -130,8 +130,8 @@ class Entry(models.Model):
     tags = TagField()
     
     # Managers.
-    live = managers.LiveEntryManager()
     objects = models.Manager()
+    live = managers.LiveEntryManager()
     
     class Meta:
         get_latest_by = 'pub_date'
